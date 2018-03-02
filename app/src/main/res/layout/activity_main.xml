@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.MainActivity"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View style="@style/Divide.Default"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:menu="@menu/menu_bottom_navigation"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
+        app:itemTextColor="@drawable/bottom_navigation_selector"/>
+
+</LinearLayout>
